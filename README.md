@@ -1,6 +1,6 @@
 # Audio Style Transfer - MelGAN
 
-This is an implementation of the [MelGAN network by Marco Pasini](https://github.com/marcoppasini/MelGAN-VC) developed by [Michael Schaufelberger (michaelschufi)](https://github.com/michaelschufi), [Raphael Mailänder (mailaenderli)](https://github.com/mailaenderli), and [Gabriel Koch (elessar-ch)](https://github.com/elessar-ch) during our Bachelor thesis at the Institute of Embedded Systems at with ZHAW School of Engineering.
+This is an implementation of the [MelGAN network by Marco Pasini](https://github.com/marcoppasini/MelGAN-VC) developed by [Michael Schaufelberger (michaelschufi)](https://github.com/michaelschufi), [Raphael Mailänder (mailaenderli)](https://github.com/mailaenderli), and [Gabriel Koch (elessar-ch)](https://github.com/elessar-ch) during our Bachelor thesis at the Institute of Embedded Systems at the ZHAW School of Engineering.
 
 ![ZHAW InES Logo](images/ines_logo.png)
 
