@@ -104,7 +104,7 @@ You can do that the following way:
 
 1. Unpack the dataset into the `data/source` folder (arbitrarily nested).  
    e.g. `data/source/GTZAN/jazz` or `data/source/GTZAN/classical`
-2. Open the [`spectrogram_generator.py`](data/spectrogram_generator.py) file and specify the constants at the top of the file.
+2. Open the [`spectrogram_generator.py`](src/data/spectrogram_generator.py) file and specify the constants at the top of the file.
 3. At the very bottom of the file, specify the following:
    - Use 
      ```python
@@ -126,7 +126,7 @@ You can test the generated dataset before training with `data/dataset-tester.py`
 ### Creating a Run Configuration File
 Configuration files specify hyperparameters, the dataset to be used, model architecture (number of filter, layers, etc.) and more.
 
-They are stored in [`config/files`](config/files).
+They are stored in [`config/files`](src/config/files).
 
 We have prepared two example configuration files for the GTZAN dataset.
 One uses mel spectrograms and the other does not.
