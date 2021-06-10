@@ -1,0 +1,29 @@
+data/source/*
+data/prepared/*
+data/spectrograms/*
+data/spectrograms_temp
+out/*
+dataset-tester.wav
+
+!**/.gitkeep
+
+# Anaconda 
+envs
+
+# project-local contains your personal configuration choices and state
+/anaconda-project-local.yml
+
+# Files autocreated by Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Spyder
+/.spyderproject
+
+# VS Code
+/.vscode

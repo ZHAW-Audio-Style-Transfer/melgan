@@ -1,0 +1,60 @@
+{
+  "name": "GTZAN-no-mel",
+  "environment": {
+    "output_path": "out",
+    "log_file": "logs.txt",
+    "rickSamplesDirectory": "data/jazz_predict_src"
+  },
+  "collection": {
+    "baseFolder": "data/spectrograms/sw240-16000hz-nftt1152-window1152-stride192-power2-melNo/GTZAN",
+    "rickPath": "jazz",
+    "mortyPath": "classical",
+    "sliceWidth": 240,
+    "nftt": 1152,
+    "window_length": 1152,
+    "strides": 192,
+    "sampleRate": 16000,
+    "batchTruncRatio": 1,
+    "min_level_db": -100,
+    "reference_db_level": 20,
+    "mel_frequencies": null
+  },
+  "training": {
+    "model": {
+      "name": "MelGAN",
+      "generator": {
+        "filters": 256,
+        "unetBlocks": 5,
+        "lambda_adversarial": 1,
+        "lambda_travel": 10,
+        "lambda_margin": 10,
+        "optimizer": {
+          "learning_rate": 2e-4,
+          "beta_1": 0.5
+        }
+      },
+      "discriminator": {
+        "filters": 512,
+        "labelSmoothing": 0.9,
+        "optimizer": {
+          "learning_rate": 2e-4,
+          "beta_1": 0.5
+        }
+      },
+      "siamese": {
+        "filters": 256,
+        "latentDim": 128,
+        "margin": 2,
+        "optimizer": {
+          "learning_rate": 2e-4,
+          "beta_1": 0.5
+        }
+      }
+    },
+    "generatorUpdateFrequency": 3,
+    "epochs": 5000,
+    "batch_size": 16,
+    "sliceWidth": 72,
+    "dataRepetition": 50
+  }
+}
